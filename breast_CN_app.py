@@ -5,12 +5,12 @@ import altair as alt
 from streamlit_option_menu import option_menu
 
 
-X = np.load(r"C:\Users\Chris\Desktop\BreastCancerML_Folder\breast-cancer-diagnosis-ml\notebooks\feature_matrix.npy")
+X = np.load(r"C:\Users\Chris\Desktop\BreastCancerML_Folder\breast-cancer-diagnosis-ml\src\features\feature_matrix.npy")
 
 
 #loading the saved model
 
-brCancer_model = pickle.load(open(r"C:\Users\Chris\Desktop\BreastCancerML_Folder\breast-cancer-diagnosis-ml\notebooks\svm_model.sav","rb"))
+brCancer_model = pickle.load(open(r"C:\Users\Chris\Desktop\BreastCancerML_Folder\breast-cancer-diagnosis-ml\models\svm_model.sav","rb"))
 
 # Streamlit app
 st.title("Breast Cancer Prediction")
